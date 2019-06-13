@@ -1,0 +1,200 @@
+﻿@using ScheduleIt2._0.Models
+
+@model LoginViewModel
+@{
+    ViewBag.Title = "Log in";
+}
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#myBtn").click(function () {
+            var value = document.getElementById("myBtn").innerHTML;
+              if (value == "Clock In") {
+             $(".clockinbtn").text('Clock Out');
+             $("#ClockInModal").modal('show');
+
+         } else {
+             $(".clockinbtn").text('Clock Out');
+              $("#ClockOutModal").modal('show');
+         }
+           
+          
+        });
+    });
+     function AddButtonClick(){ 
+         //change text from add to Update
+         var value = document.getElementById("BtnTwo").innerHTML;
+         if (value == "Clock In") {
+             $("#BtnTwo").text('Clock In');
+             $("#ClockInModal").modal('show');
+
+         } else {
+             $("#BtnTwo").text('Clock Out');
+              $("#ClockOutModal").modal('show');
+         }
+       
+
+         
+    }
+</script>
+<br />
+<br />
+
+<div class="row" align="center">
+    <div class="col-md-10 col-md-offset-2 col-lg-10 col-lg-offset-2">
+        <div id="logo" align="center" class="row">
+            <img src="~/Images/The-Tech-Academy-Logo.png" class="img-responsive mx-auto" />
+        </div>
+        
+        <section id="loginForm" align="center">
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="centerthis">
+                    <div class="form-group centerthis">
+                        <div class="col-md-offset-1 col-md-10 mx-auto username">
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control text-center centerthis", placeholder = "Username" })
+                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger centerthis" })
+                        </div>
+                    </div>
+                    <div class="form-group text-center">
+                        <div class="col-md-offset-1 col-md-10 mx-auto uPassword">
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-control text-center centerthis", placeholder = "Password" })
+                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger centerthis" })
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <div class="checkbox">
+                            @Html.CheckBoxFor(m => m.RememberMe)
+                            @Html.LabelFor(m => m.RememberMe)
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="form-group  text-center">
+                    <div class="col-md-offset-1 col-md-auto text-center">
+                        <input type="submit" value="Log in" class="loginbtn " />
+                        <!-- button to open clock in modal-->
+                        <button type="button" class="clockinbtn clockoutbtn" id="myBtn">Clock In</button>
+                        <!-- button to open clock out modal-->
+                        <button type="button" class="clockinbtn" onclick="AddButtonClick();" id="BtnTwo">Clock Out</button>
+                    </div>
+                </div>
+
+                <!-- The Clock In Modal -->
+                <div class="modal" id="ClockInModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title"></h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <!--Text area for clock in message-->
+                                <div class="form-group">
+                                    <label for="clockin">Clock in:</label>
+                                    <br />
+
+                                    <textarea type="text" name="Message" class="form-control" id="clockin" style="min-width: 100%" rows="4" placeholder="This is a clock in note"></textarea>
+
+                                </div>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Select a clock in type
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Normal clock in</a>
+                                        <a class="dropdown-item" href="#">Break clock in</a>
+                                        <a class="dropdown-item" href="#">Lunch clock in</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <!-- redirects to Actions in WorkTimeEvent controller -->
+                                <button type="submit" class="btn btn-danger" formaction="@Url.Action("ClockIn", "WorkTimeEvent")" formmethod="post">Confirm</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Clock Out Modal -->
+                <div class="modal" id="ClockOutModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title"></h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <!--Text area for clock in message-->
+                                <div class="form-group">
+                                    <label for="clockout">Clock out:</label>
+                                    <br />
+                                    <textarea type="text" name="Message" class="form-control" id="clockout" style="min-width: 100%" rows="4" placeholder="This is a clock out note"></textarea>
+
+                                </div>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Select a clock out type
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Normal clock out</a>
+                                        <a class="dropdown-item" href="#">Break clock out</a>
+                                        <a class="dropdown-item" href="#">Lunch clock out</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <!-- redirects to Actions in WorkTimeEvent controller -->
+                                <button type="submit" class="btn btn-danger" formaction="@Url.Action("ClockOut", "WorkTimeEvent")" formmethod="post">Confirm</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+
+                    <h6>@TempData["Message"]</h6>
+
+                    @Html.ActionLink("Register as a new user", "Register")
+                </p>
+                @* Enable this once you have account confirmation enabled for password reset functionality
+            <p>
+                @Html.ActionLink("Forgot your password?", "ForgotPassword")
+            </p>*@
+            }
+        </section>
+        
+        @*<div class="col-md-4">
+                <section id="socialLoginForm">
+                    @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
+                </section>
+            </div>*@
+    </div>
+</div>
+   
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
