@@ -15,3 +15,10 @@ A relational database using SQL Server Management Studio, for a Library Manageme
 
 Live project, creating a Scheduling Web Application using MVC 5 and Entity Framework.
 -Alowing only authorized users to view the calendar and apply for time off.
+
+
+
+
+
+
+
