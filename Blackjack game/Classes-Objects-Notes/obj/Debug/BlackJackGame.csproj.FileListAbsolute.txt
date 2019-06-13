@@ -1,0 +1,14 @@
+C:\Users\David\Desktop\extra\Tech Academy\C#dot-NET\C# Projects\Classes and Objects\Classes-Objects-Notes\Classes-Objects-Notes\bin\Debug\Classes-Objects-Notes.exe.config
+C:\Users\David\Desktop\extra\Tech Academy\C#dot-NET\C# Projects\Classes and Objects\Classes-Objects-Notes\Classes-Objects-Notes\bin\Debug\Classes-Objects-Notes.exe
+C:\Users\David\Desktop\extra\Tech Academy\C#dot-NET\C# Projects\Classes and Objects\Classes-Objects-Notes\Classes-Objects-Notes\bin\Debug\Classes-Objects-Notes.pdb
+C:\Users\David\Desktop\extra\Tech Academy\C#dot-NET\C# Projects\Classes and Objects\Classes-Objects-Notes\Classes-Objects-Notes\obj\Debug\BlackJackGame.csprojAssemblyReference.cache
+C:\Users\David\Desktop\extra\Tech Academy\C#dot-NET\C# Projects\Classes and Objects\Classes-Objects-Notes\Classes-Objects-Notes\obj\Debug\BlackJackGame.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\extra\Tech Academy\C#dot-NET\C# Projects\Classes and Objects\Classes-Objects-Notes\Classes-Objects-Notes\obj\Debug\Classes-Objects-Notes.exe
+C:\Users\David\Desktop\extra\Tech Academy\C#dot-NET\C# Projects\Classes and Objects\Classes-Objects-Notes\Classes-Objects-Notes\obj\Debug\Classes-Objects-Notes.pdb
+C:\Users\David\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects-3\Blackjack Game\Classes-Objects-Notes\Classes-Objects-Notes\bin\Debug\Classes-Objects-Notes.exe.config
+C:\Users\David\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects-3\Blackjack Game\Classes-Objects-Notes\Classes-Objects-Notes\bin\Debug\Classes-Objects-Notes.exe
+C:\Users\David\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects-3\Blackjack Game\Classes-Objects-Notes\Classes-Objects-Notes\bin\Debug\Classes-Objects-Notes.pdb
+C:\Users\David\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects-3\Blackjack Game\Classes-Objects-Notes\Classes-Objects-Notes\obj\Debug\BlackJackGame.csprojAssemblyReference.cache
+C:\Users\David\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects-3\Blackjack Game\Classes-Objects-Notes\Classes-Objects-Notes\obj\Debug\BlackJackGame.csproj.CoreCompileInputs.cache
+C:\Users\David\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects-3\Blackjack Game\Classes-Objects-Notes\Classes-Objects-Notes\obj\Debug\Classes-Objects-Notes.exe
+C:\Users\David\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects-3\Blackjack Game\Classes-Objects-Notes\Classes-Objects-Notes\obj\Debug\Classes-Objects-Notes.pdb

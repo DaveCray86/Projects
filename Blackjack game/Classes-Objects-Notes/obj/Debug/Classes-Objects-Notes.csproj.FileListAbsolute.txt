@@ -1,0 +1,7 @@
+C:\Users\David\Desktop\extra\Tech Academy\C#dot-NET\C# Projects\Classes and Objects\Classes-Objects-Notes\Classes-Objects-Notes\bin\Debug\Classes-Objects-Notes.exe.config
+C:\Users\David\Desktop\extra\Tech Academy\C#dot-NET\C# Projects\Classes and Objects\Classes-Objects-Notes\Classes-Objects-Notes\bin\Debug\Classes-Objects-Notes.exe
+C:\Users\David\Desktop\extra\Tech Academy\C#dot-NET\C# Projects\Classes and Objects\Classes-Objects-Notes\Classes-Objects-Notes\bin\Debug\Classes-Objects-Notes.pdb
+C:\Users\David\Desktop\extra\Tech Academy\C#dot-NET\C# Projects\Classes and Objects\Classes-Objects-Notes\Classes-Objects-Notes\obj\Debug\Classes-Objects-Notes.csprojAssemblyReference.cache
+C:\Users\David\Desktop\extra\Tech Academy\C#dot-NET\C# Projects\Classes and Objects\Classes-Objects-Notes\Classes-Objects-Notes\obj\Debug\Classes-Objects-Notes.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\extra\Tech Academy\C#dot-NET\C# Projects\Classes and Objects\Classes-Objects-Notes\Classes-Objects-Notes\obj\Debug\Classes-Objects-Notes.exe
+C:\Users\David\Desktop\extra\Tech Academy\C#dot-NET\C# Projects\Classes and Objects\Classes-Objects-Notes\Classes-Objects-Notes\obj\Debug\Classes-Objects-Notes.pdb
